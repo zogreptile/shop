@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+        .products {
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 -15px;
+        }
+        .product {
+            padding: 15px;
+            margin-left: 15px;
+            margin-right: 15px;
+            margin-bottom: 30px;
+            width: calc(33.3333333% - 30px);
+            border: 1px solid #cacaca;
+            text-align: center;
+        }
+        .product__img {
+            margin-bottom: 10px;
+        }
+        .product__img img {
+            max-width: 100%;
+        }
+        .product__name {
+            padding: 10px;
+            background-color: #dadada;
+        }
+        .product__price {
+            padding: 10px;
+        }
+        .product__add {
+            padding: 10px;
+            border: none;
+            background-color: yellow;
+            cursor: pointer;
+        }
+        .product__add:hover {
+            background-color: orangered;
+        }
+        .product__remove {
+            padding: 10px;
+            border: none;
+            background-color: red;
+            cursor: pointer;
+        }
+        .product__remove:hover {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="products">
+            <div class="product">
+                <div class="product__img">
+                    <img src="http://placehold.it/300x270/bababa" alt="">
+                </div>
+                <div class="product__name">Lorem, ipsum.</div>
+                <div class="product__price">2100 р.</div>
+                <button 
+                    class="product__add"
+                    data-product-id="az1"
+                    data-product-name="Spitfire"
+                    data-product-price="2100"
+                    data-product-img="http://placehold.it/300x270/bababa"
+                    data-product-amount="1"
+                >Add to cart</button>
+                <button class="product__remove">Remove</button>
+            </div>
+            <div class="product">
+                <div class="product__img">
+                    <img src="http://placehold.it/300x270/f3f3f3" alt="">
+                </div>
+                <div class="product__name">Lorem, ipsum.</div>
+                <div class="product__price">2100 р.</div>
+                <button 
+                    class="product__add"
+                    data-product-id="sx2"
+                    data-product-name="Independent"
+                    data-product-price="3100"
+                    data-product-img="http://placehold.it/300x270/f3f3f3"
+                    data-product-amount="1"
+                >Add to cart</button>
+                <button class="product__remove">Remove</button>
+            </div>
+            <div class="product">
+                <div class="product__img">
+                    <img src="http://placehold.it/300x270/898989" alt="">
+                </div>
+                <div class="product__name">Lorem, ipsum.</div>
+                <div class="product__price">2100 р.</div>
+                <button 
+                    class="product__add"
+                    data-product-id="dc3"
+                    data-product-name="Krux"
+                    data-product-price="2800"
+                    data-product-img="http://placehold.it/300x270/898989"
+                    data-product-amount="1"
+                >Add to cart</button>
+                <button class="product__remove">Remove</button>
+            </div>
+            <div class="product">
+                <div class="product__img">
+                    <img src="http://placehold.it/300x270/181818" alt="">
+                </div>
+                <div class="product__name">Lorem, ipsum.</div>
+                <div class="product__price">2100 р.</div>
+                <button 
+                    class="product__add"
+                    data-product-id="fv4"
+                    data-product-name="Thunder"
+                    data-product-price="2500"
+                    data-product-img="http://placehold.it/300x270/181818"
+                    data-product-amount="1"
+                >Add to cart</button>
+                <button class="product__remove">Remove</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
